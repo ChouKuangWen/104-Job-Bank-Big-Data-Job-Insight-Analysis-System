@@ -43,6 +43,7 @@ def city_vacancies(city_job_counts):
     # 加上 y 軸網底（水平線）
     ax.grid(axis='both', linestyle='--', linewidth=0.7, alpha=0.7)
     plt.tight_layout()
+    plt.savefig("output/city_vacancies.png")  # 存圖
     plt.show()
 
 
@@ -92,6 +93,7 @@ def township_vacancies(township_job_counts):
     ax.set_title("台北市與新北市各鄉鎮市區職缺分布", fontsize=20)
     ax.grid(axis='y', linestyle='--', linewidth=0.7, alpha=0.7)
     plt.tight_layout()
+    plt.savefig("output/township_vacancies.png")  # 存圖
     plt.show()
 
 
@@ -109,6 +111,7 @@ def city_salary_barchart(salary_stats):
         x = bar.get_x() + bar.get_width() / 2  # 長條中心位置
         ax.text(x, height + 500, f"{height:,.0f}", ha='center', va='bottom')
     plt.tight_layout()
+    plt.savefig("output/city_salary_barchart.png")  # 存圖
     plt.show()
 
 
@@ -122,6 +125,7 @@ def city_salary_violinplot(df):
     plt.xlabel("縣市", fontsize=14)
     plt.grid(True, axis='y', linestyle='--', alpha=0.5)
     plt.tight_layout()
+    plt.savefig("output/city_salary_violinplot.png")  # 存圖
     plt.show()
 
 
@@ -147,6 +151,7 @@ def township_salary_barchart(df):
         x = bar.get_x() + bar.get_width() / 2  # 長條中心位置
         ax.text(x, height + 500, f"{height:,.0f}", ha='center', va='bottom')
     plt.tight_layout()
+    plt.savefig("output/township_salary_barchart.png")  # 存圖
     plt.show()
 
 
@@ -164,6 +169,7 @@ def township_salary_violinplot(df):
     plt.xlabel("行政區", fontsize=14)
     plt.grid(True, axis='y', linestyle='--', alpha=0.5)
     plt.tight_layout()
+    plt.savefig("output/township_salary_violinplot.png")  # 存圖
     plt.show()
 
 
@@ -176,6 +182,7 @@ def top_skills_bar(top_skills):
     plt.title("Top 20 熱門技能")
     plt.ylabel("出現次數")
     plt.tight_layout()
+    plt.savefig("output/top_skills_bar.png")  # 存圖
     plt.show()
     
 """繪製技能共現熱力圖"""   
@@ -184,4 +191,5 @@ def plot_skill_heatmap(matrix):
     sns.heatmap(matrix.astype(int), cmap="YlGnBu", annot=True, fmt="d")
     plt.title("技能共現熱力圖")
     plt.tight_layout()
+    plt.savefig("output/skill_heatmap.png")  # 存圖
     plt.show()
