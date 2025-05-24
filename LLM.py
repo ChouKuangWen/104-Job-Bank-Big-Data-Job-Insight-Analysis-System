@@ -1,7 +1,11 @@
 import google.generativeai as genai
 import numpy as np
+from dotenv import load_dotenv
+import os
+load_dotenv()
+api_key = os.getenv("GEMINI_API_KEY")
 # 設定 API 金鑰
-genai.configure(api_key="輸入Google Gemini API 金鑰")
+genai.configure(api_key=api_key)
 
 # 建立模型
 model = genai.GenerativeModel("gemini-2.0-flash")

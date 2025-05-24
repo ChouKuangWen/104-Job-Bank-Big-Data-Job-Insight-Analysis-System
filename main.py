@@ -167,7 +167,7 @@ print(summary)
 #結論
 conclusion = LLM.generate_conclusion_summary()
 
-report.report(report_overview, city_job, township_job, city_salary, township_salary, 
+report.report(report_overview, city_job, township_job, city_salary, township_salary,
               experience_data, education_data, skill_data, summary, conclusion)
 
 
