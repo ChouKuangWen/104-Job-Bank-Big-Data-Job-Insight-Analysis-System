@@ -34,6 +34,13 @@ python crawler.py
 python main.py
 
 ---
+## .env 設定
+請在專案根目錄建立 `.env` 檔案，內容如下：
+```bash
+GEMINI_API_KEY=你的 Google Gemini API 金鑰
+
+
+---
 ## 目錄結構
 
 104-Job-Bank-Big-Data-Job-Insight-Analysis-System/
@@ -47,4 +54,15 @@ python main.py
 ├── 大數據職缺分析報告.pdf  # 輸出之分析結果
 └── README.md
 
+---
+## 資料處理流程
 
+資料清理與轉換包含：
+- **年薪轉月薪**：年薪除以 12
+- **日薪轉月薪**：日薪乘以 21
+- **時薪轉月薪**：時薪乘以 8再乘以21
+
+---
+## 成果示範
+以下是自動生成的 PDF 分析報告示例：
+- [大數據職缺分析報告.pdf](./大數據職缺分析報告.pdf)
