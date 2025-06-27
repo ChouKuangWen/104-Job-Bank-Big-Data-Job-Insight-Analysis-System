@@ -9,6 +9,7 @@
 ├── main.py                # 主程式
 ├── LLM.py                 # 以生成自然語言分析結果
 ├── report.py              # 將所有分析結果產生PDF檔
+├── requirements.txt       # 專案中用到的所有Python套件
 ├── 104大數據職缺資料.xlsx  # 儲存爬下來的資料
 ├── output/                # 儲存視覺化後的資料圖片
 ├── 大數據職缺分析報告.pdf  # 輸出之分析結果
