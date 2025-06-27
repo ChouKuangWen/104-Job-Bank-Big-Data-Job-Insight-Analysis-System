@@ -50,7 +50,7 @@ git clone https://github.com/ChouKuangWen/104-Job-Bank-Big-Data-Job-Insight-Anal
 cd 104-Job-Bank-Big-Data-Job-Insight-Analysis-System
 ```
 ```
-cd 104-Job-Bank-Big-Data-Job-Insight-Analysis-System
+pip install -r requirements.txt
 ```
 
 
