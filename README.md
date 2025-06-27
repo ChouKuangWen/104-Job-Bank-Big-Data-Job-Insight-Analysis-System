@@ -1,9 +1,31 @@
 # 104人力銀行-大數據職缺洞察分析系統
 ---
+
+## 目錄結構
+```
+104-Job-Bank-Big-Data-Job-Insight-Analysis-System/
+├── crawler.py             # 爬取 104 職缺資料
+├── visual.py              # 資料視覺化
+├── main.py                # 主程式
+├── LLM.py                 # 以生成自然語言分析結果
+├── report.py              # 將所有分析結果產生PDF檔
+├── 104大數據職缺資料.xlsx  # 儲存爬下來的資料
+├── output/                # 儲存視覺化後的資料圖片
+├── 大數據職缺分析報告.pdf  # 輸出之分析結果
+└── README.md
+```
+
+---
 ## 簡介
 104人力銀行大數據職缺相關分
 本專案為針對 104 人力銀行「大數據」相關職缺的爬蟲與分析，於2025.04.25透過自動化爬蟲技術蒐集職缺資訊，並以視覺化方式呈現熱門技能、需求趨勢與地區分佈等洞察，協助求職者或人資了解市場趨勢。
 
+## 專案目的
+在求職與職涯規劃的過程中，了解市場對不同職務的需求、技能要求與薪資區間，是每個求職者與教育訓練機構都關注的關鍵資訊。因此，設計這個程式，目的是自動化擷取職缺資料，並將其彙整為可供分析的結構化資料，例如：職稱、公司名稱、工作地點、待遇範圍、學經歷需求、技能關鍵字等。
+這支程式可以有效解決以下問題：
+1.手動查詢效率低落：自動化爬蟲大幅減少重複性的人工查詢與紀錄工作。
+2.缺乏整體職缺趨勢視角：透過大量資料的收集，可進行進一步的大數據分析，例如技能需求趨勢、各地區待遇落差等。
+3.幫助職涯規劃與技能學習：可根據熱門職缺的需求，反向推導市場需要學習哪些技能，提升個人競爭力。
 
 ## 專案特色
 
@@ -23,9 +45,14 @@
 ## 安裝與使用方式
 
 1. 環境安裝
-git clone https://github.com/ChouKuangWen/104-Job-Bank-Big-Data-Job-Insight-Analysis-System/tree/main
+```
+git clone https://github.com/ChouKuangWen/104-Job-Bank-Big-Data-Job-Insight-Analysis-System.git
 cd 104-Job-Bank-Big-Data-Job-Insight-Analysis-System
-pip install -r requirements.txt
+```
+```
+cd 104-Job-Bank-Big-Data-Job-Insight-Analysis-System
+```
+
 
 2. 執行爬蟲
 python crawler.py
@@ -40,20 +67,6 @@ python main.py
 GEMINI_API_KEY=你的 Google Gemini API 金鑰
 ```
 
----
-## 目錄結構
-```
-104-Job-Bank-Big-Data-Job-Insight-Analysis-System/
-├── crawler.py             # 爬取 104 職缺資料
-├── visual.py              # 資料視覺化
-├── main.py                # 主程式
-├── LLM.py                 # 以生成自然語言分析結果
-├── report.py              # 將所有分析結果產生PDF檔
-├── 104大數據職缺資料.xlsx  # 儲存爬下來的資料
-├── output/                # 儲存視覺化後的資料圖片
-├── 大數據職缺分析報告.pdf  # 輸出之分析結果
-└── README.md
-```
 
 ---
 
